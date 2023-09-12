@@ -6,7 +6,7 @@ def count_batteries_by_health(present_capacities):
     "failed": 0
   }
   for cap in present_capacities:
-    soh =(cap/120)*100
+    soh =(cap/120)*100    #calculating soh as percentage
     if soh>80:
       counts["healthy"]+=1
     elif 63<=soh<=80:
